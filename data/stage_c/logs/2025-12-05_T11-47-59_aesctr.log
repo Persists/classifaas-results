@@ -1,0 +1,228 @@
+[Fri Dec  5 11:47:59 UTC 2025] Starting benchmark 'aesctr' with config './configs/aesCtr.yaml'
+Validating functions...
+[2025-12-05T11:47:59Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-aesCtr-512-512-139
+[2025-12-05T11:47:59Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-aesCtr-512-512-32
+[2025-12-05T11:47:59Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-aesCtr-512-512-747
+[2025-12-05T11:47:59Z] [[0mwarning[0m] [[32mazure_limitations[0m] Azure can´t handle more than 300 parallel requests. Limiting to 300.
+[2025-12-05T11:47:59Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-aesCtr-512-512-772
+[2025-12-05T11:47:59Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-12-05T11:47:59Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 500 workers
+[2025-12-05T11:47:59Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 300 workers
+[2025-12-05T11:47:59Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 300 workers
+[2025-12-05T11:47:59Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 500 workers
+[2025-12-05T11:48:09Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 632/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 646/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2111/2500 tasks started.
+[2025-12-05T11:48:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 649/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 1170/2500 tasks started.
+[2025-12-05T11:48:24Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-aesCtr-512 and closed archiver
+[2025-12-05T11:48:29Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 1035/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 1729/2500 tasks started.
+[2025-12-05T11:48:39Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 1443/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2273/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.
+[2025-12-05T11:48:49Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 1656/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:48:59Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 1699/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:49:05Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-aesCtr-512 and closed archiver
+[2025-12-05T11:49:09Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 1707/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:49:19Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 1739/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:49:29Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 1751/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:49:39Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 1755/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:49:49Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 1958/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:49:51Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-aesCtr-512 and closed archiver
+[2025-12-05T11:49:59Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2110/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:50:09Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2310/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.
+[2025-12-05T11:50:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2357/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:50:29Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2387/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:50:39Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2392/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:50:49Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2394/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.
+[2025-12-05T11:50:59Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2402/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:51:09Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2406/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:51:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:51:29Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:51:39Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:51:49Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:51:59Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.
+[2025-12-05T11:52:09Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:18Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:26Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:29Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:52:39Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:52:44Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:45Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:48Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:48Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:49Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.
+[2025-12-05T11:52:49Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:50Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:51Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:52Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:53Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:53Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:54Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:54Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:54Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:55Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:55Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:56Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:56Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:56Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:56Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:56Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:57Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:57Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:57Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:57Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:58Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:58Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:58Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:52:59Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:00Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:00Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:00Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:01Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:02Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:02Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:03Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:03Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:03Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:04Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:04Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:04Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:05Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:05Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:05Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:06Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:06Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:07Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:07Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:08Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:08Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:08Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:09Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.
+[2025-12-05T11:53:09Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:09Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:09Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:09Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:10Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:10Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:10Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:11Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:12Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:14Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:17Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:17Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:53:26Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:53:29Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.
+[2025-12-05T11:53:39Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:53:49Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:53:59Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:54:01Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:09Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:54:12Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:19Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:54:19Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:20Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:21Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:22Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:22Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:22Z] [[31merror[0m] [task_execution] Error executing task azure-aesCtr-512: task azure-aesCtr-512 failed after 7 retries: <nil>
+[2025-12-05T11:54:27Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-aesCtr-512 and closed archiver
+[2025-12-05T11:54:29Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-aesCtr-512-512-139: 2500/2500 tasks started.alibaba-us-east-1-alibaba-aesCtr-512-512-32: 2500/2500 tasks started.azure-germanywestcentral-azure-aesCtr-512-512-747: 2500/2500 tasks started.gcp-us-east1-gcp-aesCtr-512-512-772: 2500/2500 tasks started.
+[2025-12-05T11:54:29Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline
+[Fri Dec  5 11:54:29 UTC 2025] Finished benchmark 'aesctr' successfully
+[Fri Dec  5 11:54:29 UTC 2025] Sleeping 600 seconds before next workload...

@@ -1,0 +1,170 @@
+[Tue Dec  2 17:47:01 UTC 2025] Starting benchmark 'gzip' with config './configs/gzip.yaml'
+Validating functions...
+[2025-12-02T17:47:01Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-gzip-512-512-534
+[2025-12-02T17:47:01Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-gzip-512-512-901
+[2025-12-02T17:47:01Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-gzip-512-512-154
+[2025-12-02T17:47:01Z] [[0mwarning[0m] [[32mazure_limitations[0m] Azure can´t handle more than 300 parallel requests. Limiting to 300.
+[2025-12-02T17:47:01Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-gzip-512-512-293
+[2025-12-02T17:47:01Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-12-02T17:47:01Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 300 workers
+[2025-12-02T17:47:01Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 500 workers
+[2025-12-02T17:47:01Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 500 workers
+[2025-12-02T17:47:01Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 300 workers
+[2025-12-02T17:47:11Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gzip-512-512-154: 681/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 1152/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 1961/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 1914/2500 tasks started.
+[2025-12-02T17:47:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 715/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2231/2500 tasks started.
+[2025-12-02T17:47:27Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-gzip-512 and closed archiver
+[2025-12-02T17:47:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 1345/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:47:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 1788/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:47:49Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-gzip-512 and closed archiver
+[2025-12-02T17:47:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2163/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:48:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2177/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:48:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2205/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:48:21Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gzip-512-512-154: 2231/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.
+[2025-12-02T17:48:25Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-gzip-512 and closed archiver
+[2025-12-02T17:48:31Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2248/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.
+[2025-12-02T17:48:41Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2256/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.
+[2025-12-02T17:48:51Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2258/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.
+[2025-12-02T17:49:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2442/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:49:11Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.
+[2025-12-02T17:49:21Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.
+[2025-12-02T17:49:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:49:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:49:51Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.
+[2025-12-02T17:50:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:50:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:50:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:50:31Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.
+[2025-12-02T17:50:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:50:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:23Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:23Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:23Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:24Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:25Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:25Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:31Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.
+[2025-12-02T17:51:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:51:52Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:54Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:54Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:55Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:55Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:55Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:55Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:56Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:56Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:56Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:57Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:58Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:51:59Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:00Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gzip-512-512-534: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gzip-512-512-901: 2500/2500 tasks started.azure-germanywestcentral-azure-gzip-512-512-154: 2500/2500 tasks started.gcp-us-east1-gcp-gzip-512-512-293: 2500/2500 tasks started.
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:01Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:02Z] [[31merror[0m] [task_execution] Error executing task azure-gzip-512: task azure-gzip-512 failed after 7 retries: <nil>
+[2025-12-02T17:52:07Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-gzip-512 and closed archiver
+[2025-12-02T17:52:09Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline
+[Tue Dec  2 17:52:09 UTC 2025] Finished benchmark 'gzip' successfully
+[Tue Dec  2 17:52:09 UTC 2025] Sleeping 600 seconds before next workload...

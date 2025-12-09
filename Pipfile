@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+seaborn = "*"
+jupyter = "*"
+ipykernel = "*"
+pandas = "*"
+matplotlib = "*"
+import-ipynb = "*"
+appnope = "*"
+scikit-posthocs = "*"
+pyarrow = "*"
+pingouin = "*"
+colorcet = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

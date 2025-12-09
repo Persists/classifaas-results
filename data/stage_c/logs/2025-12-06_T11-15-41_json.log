@@ -1,0 +1,233 @@
+[Sat Dec  6 11:15:41 UTC 2025] Starting benchmark 'json' with config './configs/json.yaml'
+Validating functions...
+[2025-12-06T11:15:41Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-json-512-512-760
+[2025-12-06T11:15:41Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-json-512-512-615
+[2025-12-06T11:15:41Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-json-512-512-78
+[2025-12-06T11:15:41Z] [[0mwarning[0m] [[32mazure_limitations[0m] Azure can´t handle more than 300 parallel requests. Limiting to 300.
+[2025-12-06T11:15:41Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-json-512-512-494
+[2025-12-06T11:15:41Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-12-06T11:15:41Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 500 workers
+[2025-12-06T11:15:41Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 300 workers
+[2025-12-06T11:15:41Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 300 workers
+[2025-12-06T11:15:41Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 500 workers
+[2025-12-06T11:15:51Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 1676/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 584/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 1048/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 1702/2500 tasks started.
+[2025-12-06T11:16:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 595/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2018/2500 tasks started.
+[2025-12-06T11:16:07Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-json-512 and closed archiver
+[2025-12-06T11:16:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1060/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:16:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1368/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:16:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1668/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:16:34Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-json-512 and closed archiver
+[2025-12-06T11:16:41Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1684/2500 tasks started.
+[2025-12-06T11:16:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1687/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:17:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1851/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:17:11Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 1986/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.
+[2025-12-06T11:17:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2128/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:17:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2155/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:17:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2163/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:17:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2163/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:18:01Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2166/2500 tasks started.
+[2025-12-06T11:18:02Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-json-512 and closed archiver
+[2025-12-06T11:18:11Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-json-512-512-78: 2250/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.
+[2025-12-06T11:18:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2382/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:18:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2487/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:18:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:18:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:19:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:19:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:19:21Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:19:31Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.
+[2025-12-06T11:19:41Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.
+[2025-12-06T11:19:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:20:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:05Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:11Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.
+[2025-12-06T11:20:19Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:19Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:20Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:21Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:29Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:31Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:35Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:36Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:37Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:39Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:39Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:39Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:39Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:40Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:40Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:40Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:40Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:40Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:41Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:43Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:44Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:44Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:44Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:44Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:45Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:46Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:47Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:48Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:49Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:50Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:51Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:20:52Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:54Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:20:54Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:01Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:21:06Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:06Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:06Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:06Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:07Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:09Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:11Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:11Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.
+[2025-12-06T11:21:12Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:13Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:13Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:13Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:14Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:15Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:15Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:15Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:21Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.
+[2025-12-06T11:21:31Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.
+[2025-12-06T11:21:32Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:34Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:38Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:41Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-json-512-512-615: 2500/2500 tasks started.azure-germanywestcentral-azure-json-512-512-78: 2500/2500 tasks started.gcp-us-east1-gcp-json-512-512-494: 2500/2500 tasks started.aws-us-east-1-aws-json-512-512-760: 2500/2500 tasks started.
+[2025-12-06T11:21:42Z] [[31merror[0m] [task_execution] Error executing task azure-json-512: task azure-json-512 failed after 7 retries: <nil>
+[2025-12-06T11:21:47Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-json-512 and closed archiver
+[2025-12-06T11:21:49Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline
+[Sat Dec  6 11:21:49 UTC 2025] Finished benchmark 'json' successfully
+[Sat Dec  6 11:21:49 UTC 2025] Sleeping 600 seconds before next workload...

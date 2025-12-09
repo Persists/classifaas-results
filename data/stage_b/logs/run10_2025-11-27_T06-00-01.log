@@ -1,0 +1,834 @@
+Validating functions...
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-gemm-128-128-109
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-gemm-512-512-320
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-gemm-2048-2048-216
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-gemm-128-128-777
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-gemm-512-512-270
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-gemm-2048-2048-291
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-gemm-512-512-513
+[2025-11-27T06:00:01Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-gemm-2048-2048-496
+[2025-11-27T06:00:02Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-gemm-128-128-493
+[2025-11-27T06:00:02Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-gemm-512-512-351
+[2025-11-27T06:00:02Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-gemm-2048-2048-871
+[2025-11-27T06:00:02Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:02Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 250 workers
+[2025-11-27T06:00:12Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-128-128-777: 251/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 624/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 303/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 586/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 848/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1144/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 697/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 700/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1026/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 279/1500 tasks started.
+[2025-11-27T06:00:22Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-513: 644/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 525/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1102/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 252/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 804/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1474/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1442/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 480/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.
+[2025-11-27T06:00:32Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 255/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1094/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 762/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 651/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1018/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.
+[2025-11-27T06:00:35Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-gemm-2048 and closed archiver
+[2025-11-27T06:00:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 258/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1482/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1009/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 818/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1094/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.
+[2025-11-27T06:00:49Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-gemm-2048 and closed archiver
+[2025-11-27T06:00:51Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-gemm-512 and closed archiver
+[2025-11-27T06:00:52Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 261/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1231/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1116/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1071/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.
+[2025-11-27T06:00:59Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-gemm-512 and closed archiver
+[2025-11-27T06:01:02Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1312/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1144/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 263/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1459/1500 tasks started.
+[2025-11-27T06:01:12Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1153/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 265/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:01:22Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 267/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1311/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.
+[2025-11-27T06:01:24Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-gemm-128 and closed archiver
+[2025-11-27T06:01:30Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-gemm-128 and closed archiver
+[2025-11-27T06:01:32Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1458/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 269/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:01:42Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1490/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 272/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:01:44Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-gemm-2048 and closed archiver
+[2025-11-27T06:01:45Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-gemm-512 and closed archiver
+[2025-11-27T06:01:52Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 274/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1490/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.
+[2025-11-27T06:02:02Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 276/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:02:12Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 278/1500 tasks started.
+[2025-11-27T06:02:22Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 281/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.
+[2025-11-27T06:02:32Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-128-128-777: 283/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.
+[2025-11-27T06:02:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 286/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.
+[2025-11-27T06:02:52Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-128-128-777: 288/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.
+[2025-11-27T06:03:02Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 289/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:03:12Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 292/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:03:22Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 296/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.
+[2025-11-27T06:03:32Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 297/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.
+[2025-11-27T06:03:42Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 300/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.
+[2025-11-27T06:03:52Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 302/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.
+[2025-11-27T06:04:02Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 304/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.
+[2025-11-27T06:04:12Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-128-128-777: 307/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.
+[2025-11-27T06:04:22Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 310/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 250/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:24Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:25Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:26Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:27Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:04:27Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:28Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:04:32Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 558/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:40Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:41Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 561/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.
+[2025-11-27T06:04:42Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:42Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:42Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:44Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:50Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:50Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:50Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:51Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:04:52Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 564/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.
+[2025-11-27T06:05:02Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 566/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:05:12Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 568/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.
+[2025-11-27T06:05:22Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 571/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.
+[2025-11-27T06:05:32Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 573/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.
+[2025-11-27T06:05:33Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:05:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 582/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:05:52Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 587/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:05:52Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:05:52Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:05:52Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:05:53Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-2048: task azure-gemm-2048 failed after 7 retries: <nil>
+[2025-11-27T06:05:58Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-gemm-2048 and closed archiver
+[2025-11-27T06:06:02Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 592/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:06:12Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 596/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.
+[2025-11-27T06:06:22Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 604/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.
+[2025-11-27T06:06:32Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 612/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:06:42Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1132/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 733/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:06:52Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 858/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:07:02Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 942/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:07:12Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1077/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.
+[2025-11-27T06:07:22Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1244/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.
+[2025-11-27T06:07:32Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1382/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:07:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.
+[2025-11-27T06:07:52Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:08:02Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:08:12Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.
+[2025-11-27T06:08:22Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.
+[2025-11-27T06:08:32Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:41Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-128-128-109: 1500/1500 tasks started.aws-us-east-1-aws-gemm-2048-2048-216: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-270: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-2048-2048-291: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-2048-2048-496: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-512-512-351: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-2048-2048-871: 1500/1500 tasks started.aws-us-east-1-aws-gemm-512-512-320: 1500/1500 tasks started.alibaba-us-east-1-alibaba-gemm-128-128-777: 1500/1500 tasks started.azure-germanywestcentral-azure-gemm-512-512-513: 1500/1500 tasks started.gcp-us-east1-gcp-gemm-128-128-493: 1500/1500 tasks started.
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:42Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-128: task alibaba-gemm-128 failed after 7 retries: <nil>
+[2025-11-27T06:08:44Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:44Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:44Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:44Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:44Z] [[31merror[0m] [task_execution] Error executing task alibaba-gemm-512: task alibaba-gemm-512 failed after 7 retries: <nil>
+[2025-11-27T06:08:47Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-gemm-128 and closed archiver
+[2025-11-27T06:08:49Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-gemm-512 and closed archiver
+[2025-11-27T06:08:51Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline

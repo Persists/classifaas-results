@@ -1,0 +1,119 @@
+[Fri Dec  5 17:30:14 UTC 2025] Starting benchmark 'sha256' with config './configs/sha256.yaml'
+Validating functions...
+[2025-12-05T17:30:14Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-sha256-512-512-194
+[2025-12-05T17:30:14Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-sha256-512-512-755
+[2025-12-05T17:30:14Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-sha256-512-512-345
+[2025-12-05T17:30:14Z] [[0mwarning[0m] [[32mazure_limitations[0m] Azure can´t handle more than 300 parallel requests. Limiting to 300.
+[2025-12-05T17:30:14Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-sha256-512-512-818
+[2025-12-05T17:30:14Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-12-05T17:30:14Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 500 workers
+[2025-12-05T17:30:14Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 500 workers
+[2025-12-05T17:30:14Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 300 workers
+[2025-12-05T17:30:14Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 300 workers
+[2025-12-05T17:30:24Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-sha256-512-512-818: 1608/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 1632/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 1586/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 667/2500 tasks started.
+[2025-12-05T17:30:34Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 777/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:30:44Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 1605/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:30:45Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-sha256-512 and closed archiver
+[2025-12-05T17:30:51Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-sha256-512 and closed archiver
+[2025-12-05T17:30:54Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2086/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:31:04Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2125/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:31:14Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2170/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.
+[2025-12-05T17:31:24Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2383/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:31:34Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-sha256-512-512-345: 2458/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.
+[2025-12-05T17:31:44Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2465/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.
+[2025-12-05T17:31:54Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:04Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:14Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:24Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:34Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-sha256-512 and closed archiver
+[2025-12-05T17:32:34Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:44Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:32:54Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.
+[2025-12-05T17:33:04Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:33:14Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:33:24Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:33:34Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:33:44Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:33:54Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:34:04Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:34:14Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.
+[2025-12-05T17:34:24Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:34:34Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:34:34Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:34Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:34Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:34Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:35Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:44Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:34:51Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:51Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:51Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:34:54Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:35:04Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:07Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:08Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:08Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:08Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:08Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:09Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:10Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:14Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.
+[2025-12-05T17:35:24Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:35:34Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.
+[2025-12-05T17:35:38Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:39Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:39Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:39Z] [[31merror[0m] [task_execution] Error executing task azure-sha256-512: task azure-sha256-512 failed after 7 retries: <nil>
+[2025-12-05T17:35:44Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-sha256-512-512-755: 2500/2500 tasks started.azure-germanywestcentral-azure-sha256-512-512-345: 2500/2500 tasks started.gcp-us-east1-gcp-sha256-512-512-818: 2500/2500 tasks started.aws-us-east-1-aws-sha256-512-512-194: 2500/2500 tasks started.
+[2025-12-05T17:35:44Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-sha256-512 and closed archiver
+[2025-12-05T17:35:46Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline
+[Fri Dec  5 17:35:46 UTC 2025] Finished benchmark 'sha256' successfully
+[Fri Dec  5 17:35:46 UTC 2025] Sleeping 600 seconds before next workload...

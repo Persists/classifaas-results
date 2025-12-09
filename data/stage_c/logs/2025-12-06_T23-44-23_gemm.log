@@ -1,0 +1,122 @@
+[Sat Dec  6 23:44:23 UTC 2025] Starting benchmark 'gemm' with config './configs/gemm.yaml'
+Validating functions...
+[2025-12-06T23:44:23Z] [[36minfo[0m] [executor_setup] Setting up executor for aws-us-east-1-aws-gemm-512-512-84
+[2025-12-06T23:44:23Z] [[36minfo[0m] [executor_setup] Setting up executor for alibaba-us-east-1-alibaba-gemm-512-512-60
+[2025-12-06T23:44:23Z] [[36minfo[0m] [executor_setup] Setting up executor for gcp-us-east1-gcp-gemm-512-512-816
+[2025-12-06T23:44:23Z] [[36minfo[0m] [executor_setup] Setting up executor for azure-germanywestcentral-azure-gemm-512-512-933
+[2025-12-06T23:44:23Z] [[0mwarning[0m] [[32mazure_limitations[0m] Azure can´t handle more than 300 parallel requests. Limiting to 300.
+[2025-12-06T23:44:23Z] [[36minfo[0m] [start_timeline] Benchmark Timeline
+[2025-12-06T23:44:23Z] [[36minfo[0m] [load_generator_start] (alibaba: us-east-1) Starting load generator with 500 workers
+[2025-12-06T23:44:23Z] [[36minfo[0m] [load_generator_start] (azure: germanywestcentral) Starting load generator with 300 workers
+[2025-12-06T23:44:23Z] [[36minfo[0m] [load_generator_start] (aws: us-east-1) Starting load generator with 500 workers
+[2025-12-06T23:44:23Z] [[36minfo[0m] [load_generator_start] (gcp: us-east1) Starting load generator with 500 workers
+[2025-12-06T23:44:33Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 1741/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 1238/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 1746/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 704/2500 tasks started.
+[2025-12-06T23:44:43Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2048/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 721/2500 tasks started.
+[2025-12-06T23:44:53Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 1416/2500 tasks started.
+[2025-12-06T23:44:54Z] [[36minfo[0m] [function_finished] Finished benchmarking function aws-gemm-512 and closed archiver
+[2025-12-06T23:45:03Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2027/2500 tasks started.
+[2025-12-06T23:45:13Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2394/2500 tasks started.
+[2025-12-06T23:45:13Z] [[36minfo[0m] [function_finished] Finished benchmarking function gcp-gemm-512 and closed archiver
+[2025-12-06T23:45:23Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2412/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:45:33Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2425/2500 tasks started.
+[2025-12-06T23:45:43Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2448/2500 tasks started.
+[2025-12-06T23:45:53Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-933: 2468/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.
+[2025-12-06T23:46:03Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2486/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:46:13Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2491/2500 tasks started.
+[2025-12-06T23:46:23Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.
+[2025-12-06T23:46:33Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.
+[2025-12-06T23:46:43Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:46:49Z] [[36minfo[0m] [function_finished] Finished benchmarking function alibaba-gemm-512 and closed archiver
+[2025-12-06T23:46:53Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.
+[2025-12-06T23:47:03Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:47:13Z] [[36minfo[0m] [progress_update] alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.
+[2025-12-06T23:47:23Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.
+[2025-12-06T23:47:33Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.
+[2025-12-06T23:47:43Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:47:53Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.
+[2025-12-06T23:48:03Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:48:13Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:48:23Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:48:33Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:48:43Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:48:53Z] [[36minfo[0m] [progress_update] azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.
+[2025-12-06T23:49:01Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:01Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:03Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:49:13Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:49:19Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:19Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:20Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:20Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:20Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:20Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:21Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:22Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:22Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:22Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:22Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:23Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:49:23Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:23Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:23Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:23Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:23Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:24Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:25Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:33Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:49:43Z] [[36minfo[0m] [progress_update] gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.
+[2025-12-06T23:49:50Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:53Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:49:53Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:53Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:54Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:55Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:49:56Z] [[31merror[0m] [task_execution] Error executing task azure-gemm-512: task azure-gemm-512 failed after 7 retries: <nil>
+[2025-12-06T23:50:01Z] [[36minfo[0m] [function_finished] Finished benchmarking function azure-gemm-512 and closed archiver
+[2025-12-06T23:50:03Z] [[36minfo[0m] [progress_update] aws-us-east-1-aws-gemm-512-512-84: 2500/2500 tasks started.alibaba-us-east-1-alibaba-gemm-512-512-60: 2500/2500 tasks started.gcp-us-east1-gcp-gemm-512-512-816: 2500/2500 tasks started.azure-germanywestcentral-azure-gemm-512-512-933: 2500/2500 tasks started.
+[2025-12-06T23:50:03Z] [[36minfo[0m] [finish_timeline] Benchmark Timeline
+[Sat Dec  6 23:50:03 UTC 2025] Finished benchmark 'gemm' successfully
+[Sat Dec  6 23:50:03 UTC 2025] Sleeping 600 seconds before next workload...
