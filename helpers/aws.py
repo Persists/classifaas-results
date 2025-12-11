@@ -19,8 +19,8 @@ def load_billed_aws(csv_path: str) -> pd.DataFrame:
     # Convert numeric fields
     df["billed_duration_ms"] = pd.to_numeric(df["billed_duration_ms"], errors="coerce")
     df["duration_ms"] = pd.to_numeric(df["duration_ms"], errors="coerce")
-    df["memory_mb"] = (pd.to_numeric(df["memory_bytes"], errors="coerce") / 1_000_000).astype("Int64")
-    df["max_memory_used_mb"] = (pd.to_numeric(df["max_memory_used_bytes"], errors="coerce") / 1_000_000).astype("float")
+    df["memory_mb"] = (pd.to_numeric(df["memory_bytes"], errors="coerce") / 1_000_000).astype("float64")
+    df["max_memory_used_mb"] = (pd.to_numeric(df["max_memory_used_bytes"], errors="coerce") / 1_000_000).astype("float64")
     df["init_duration_ms"] = pd.to_numeric(df["init_duration_ms"], errors="coerce")
 
     # Keep relevant subset
