@@ -187,6 +187,7 @@ def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark
     group_cols = ["cpu_type"] + (["timestamp"] if group_on_timestamp else [])
     instance_means = subset.groupby(["instance_id"] + group_cols)[metric_field].mean().reset_index()
     instance_means.columns = ["instance_id"] + group_cols + ["instance_mean"]
+
     
     # Tukey on instance means, grouped by CPU type
     def is_outlier_tukey(series: pd.Series) -> pd.Series:
