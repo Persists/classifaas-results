@@ -148,7 +148,7 @@ def metric_for_benchmark(benchmark_type: str) -> str:
 
 
 
-def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark: str, group_on_timestamp: bool, region: str | None = None, remove_cold: bool = True) -> pd.DataFrame:
+def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark: str, group_on_timestamp: bool, region: str | None = None, remove_cold: bool = True, no_outlier_filter: bool = False) -> pd.DataFrame:
     """
     Filter the DataFrame for specific CPU/system configurations based on provider, memory size, region, and benchmark type.
     Optionally group by timestamp to ensure complete sets of invocations.
@@ -188,7 +188,7 @@ def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark
     instance_means = subset.groupby(["instance_id"] + group_cols)[metric_field].mean().reset_index()
     instance_means.columns = ["instance_id"] + group_cols + ["instance_mean"]
 
-    
+        
     # Tukey on instance means, grouped by CPU type
     def is_outlier_tukey(series: pd.Series) -> pd.Series:
         Q1 = series.quantile(0.25)
@@ -197,10 +197,12 @@ def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark
         lower_bound = Q1 - 1.5 * IQR
         upper_bound = Q3 + 1.5 * IQR
         return (series < lower_bound) | (series > upper_bound)
-    
-    outlier_mask = instance_means.groupby(group_cols)["instance_mean"].transform(is_outlier_tukey)
-    bad_instances = instance_means.loc[outlier_mask, "instance_id"].unique()
-    subset = subset[~subset["instance_id"].isin(bad_instances)]
+
+
+    if no_outlier_filter == False:
+        outlier_mask = instance_means.groupby(group_cols)["instance_mean"].transform(is_outlier_tukey)
+        bad_instances = instance_means.loc[outlier_mask, "instance_id"].unique()
+        subset = subset[~subset["instance_id"].isin(bad_instances)]
 
     return subset
 
