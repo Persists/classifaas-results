@@ -1,12 +1,12 @@
 #### Slide 1: Title Slide
 
-Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the Effects of Hardware Heterogeneity on FaaS Performance Variability.' My name is Jonas Heisterberg.
+Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the Effects of Hardware Heterogeneity on FaaS Performance Variability.' My name is Jonas as you might know already.
 
 #### Slide 2: Motivation - The gap between the "Serverless" promise and the physical reality.
 
-- We will focus on the core promise of FaaS is abstraction of infrastructure management:
-  - it enables developers focusing on writing code rather worrying about the underlying infrastructure, and its management.
-  - On FaaS Platforms Developers only specify abstract resource requirements of their functions, like memory size.
+- I will focus on the core promise of FaaS is abstraction.
+  - it promisses developers focusing on writing code rather worrying about the underlying infrastructure, and its management.
+  - Developers only specify abstract resource requirements of their functions, like memory size.
   - The platform automatically handles resource allocation, and scaling of function instances that serve incoming requests.
 - In reality identical functions with the same configuration still exhibit significant performance variability.
 - Because FaaS uses pay-per-use billing, this performance variance directly translates into cost variance
@@ -52,33 +52,38 @@ Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the E
 - First of all we have some common setup accross all experiments:
 
   - Every microbenchmark is executed with a fixed problem size across all providers, regions and configurations to ensure comparability.
-  - We focus on warm performance of an instance:
-    - meaning, per instance we run 4 invocations and then let them terminate itself
+  - We chose our concurrency level and total number, so we have multiple invocations per instance.
+  - We aim each instance to serve 4 invocations
+  - For the analysis:
+    - discard the first invocation to avoid cold start effects.
     - we only keep instances where all 4 invocations succeeded
-    - we discard the first invocation to avoid cold start effects, and build the mean from the remaining 3 invocations.
-    - we use the tukey method to remove outliers from the remaining invocations.
+    - we use the tukey method to remove outliers from the remaining instances
 
-- Stage A builds the regional baseline, where we take a look where hardware heterogeneity exists across regions within a provider, and how the hetereogenity in each region and provider correlates performance variability.
+- Stage A builds the regional baseline
 
+  - if hardware hetereogenity existis across regions
+  - we see if this hetereogenity correleates with performance and its variability
   - We deploy a Matrix Multiplication benchmark across 12 region per provider using 1 configuration
 
 - Stage B asesses whether memory configuration changes CPU assignment and whether variability narrows or shifts.
-- therefore we select 1 region per provider form stage A that has high heterogeneity and deploy the matrix multiplication benchmark across different memory configurations.
+- 1 region from stage A with multiple cpus per provider
 
 - The final stage C analyzes the temporal dynamics of CPU assignment and performance and also taking a look at different microbenchmarks.
 - We use this stage also for a deeper statistical analysis as it generates the largest data set.
-- The goal is of the analysis to understand how much of the total performance variability of a platform can be explained by hardware heterogeneity.
 
 - In all stages we carefully time experiment runs to account for temporal performance patterns.
 
 #### Slide 6: Stage A Gcp results
 
-- highest amount of different cpu models
+- One Experiment run consists of a fixed number of total requests, and a concurrency level
+- the results show the results of one experiment run per region
+
+- What makes gcp interesting: highest amount of different cpu models
 - rightmost panel cpu composition per region - stacked bar plot
 - left mean performance per region
 - middle coefficient of variation per region
 - high variability in performance across regions (25%)
-- more spread cpu composition regions also yield higher variability (middle coefficient of variation plot)
+- All providers: more spread cpu composition regions also yield higher variability (middle coefficient of variation plot)
 
 #### Slide 7: Stage A: Azure results
 
@@ -92,7 +97,7 @@ Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the E
 - All except alibaba cpu models group together quite well
 - still some variability within same cpu model
   - maybe due to noisy neighbors or other region specific factors
-- Interesting, in AZURE the models group best together
+- Interesting, in AZURE the models group best together -> maybe due to the highest resolution in cpu identification
 
 #### Slide 9: Stage B: Memory configuration effects
 
@@ -126,20 +131,16 @@ Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the E
 #### Slide 12: Stage C: Decomposition of performance variability
 
 - Finally we also performed a variance decomposition analysis
-- There fore we use type 2 Anova, which allows us to quantify how much of the total variability can be explained by different factors
-- We use that to quantify how much of the total variability can be explained by hardware heterogeneity
+- There fore we use type 2 Anova.
+- Decomposition: allows us to quantify how much of the total variability can be explained by hardware heterogeneity
 - The chart shows the results for all providers and benchmarks
 - The blue bars show the portion of variability explained by cpu model
 - The green bars show the portion explained by time
 - The red shows the residual variability that cant be explained by these two factors
 
-- type of workload plays a role
-
-  - some are
-
 - GCP and AWS are most affected by cpu model
 - Alibaba is most affected by the time
-- Azure has the lowest impact of cpu model and time, meaning the highest residual variability
+- Azure has the lowest impact of cpu model on its performance variability, meaning the highest residual variability
 
 - that can be adressed to the factor we will address in the last slide
 
