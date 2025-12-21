@@ -23,7 +23,7 @@ def clean_cpu_string(cpu_name):
 # ==============================================================================
 # 2. SHORTENING HELPER (For Legend)
 # ==============================================================================
-def shorten_cpu_name(cpu_name, max_length=50):
+def shorten_cpu_name(cpu_name):
     """
     Robust shortening for legends.
     """
@@ -84,12 +84,12 @@ MANUAL_COLORS = {
     "azure:AMD EPYC 7763":                     COLORS[5],  
     "azure:AMD EPYC 9V74":                     COLORS[6],  
     # --- GCP (Purples/Browns - Microarchitecture Codes) ---
-    "gcp:1":   COLORS[7],   
-    "gcp:17":  COLORS[8],  
-    "gcp:85":  COLORS[9],  
-    "gcp:106": COLORS[10],  
-    "gcp:143": COLORS[11],  
-    "gcp:173": COLORS[12],  
+    "gcp:Model 1 (AMD)":   COLORS[7],   
+    "gcp:Model 17 (AMD)":  COLORS[8],  
+    "gcp:Model 85 (Intel)":  COLORS[9],  
+    "gcp:Model 106 (Intel)": COLORS[10],  
+    "gcp:Model 143 (Intel)": COLORS[11],  
+    "gcp:Model 173 (Intel)": COLORS[12],  
     # --- ALIBABA (Greys/Olives/Cyans - Distinct from AWS) ---
     "alibaba:Intel Xeon 2.50GHz":                   COLORS[13],  
     "alibaba:Intel Xeon 2.90GHz":                   COLORS[14],  
@@ -126,3 +126,4 @@ def get_cpu_palette(cpu_list, provider=None):
     """
     unique_cpus = sorted(list(set(cpu_list)))
     return {cpu: get_cpu_color(cpu, provider) for cpu in unique_cpus}
+

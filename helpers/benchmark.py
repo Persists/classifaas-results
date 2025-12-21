@@ -43,8 +43,23 @@ def parse_log_file(benchmark_file: str) -> list[dict]:
                 data = json.loads(line)
                 body = data["body"]
                 benchmark = body.get("benchmark", {})
-                cpu_field = body.get("cpuModel", "unknown") if provider == "gcp" else body.get("cpuType", "unknown")
+                cpu_field = body.get("cpuType", "unknown")
                 cpu_frequency_mhz = body.get("cpuFrequencyMHz", None)
+
+                if provider == "gcp":
+                    model = body.get("cpuModel", "unknown")
+                    GCP_CPU_MAPPING = {
+                        "1": "Model 1 (AMD)",
+                        "17": "Model 17 (AMD)",
+                        "85": "Model 85 (Intel)",
+                        "106": "Model 106 (Intel)",
+                        "143": "Model 143 (Intel)",
+                        "173": "Model 173 (Intel)",
+                    }
+                    cpu_field = GCP_CPU_MAPPING.get(
+                        str(model), 
+                        f"Model {model} (Unknown)"
+                    )  
 
                 if "AMD" in cpu_field and provider == "aws":
                     if cpu_frequency_mhz and cpu_frequency_mhz >= 2640 and cpu_frequency_mhz <= 2660:
@@ -67,6 +82,7 @@ def parse_log_file(benchmark_file: str) -> list[dict]:
 
                     # CPU/system info
                     "cpu_type": cpu_field,
+                    "cpu_model_number": body.get("cpuModel", "unknown"),
 
                     # Performance metrics
                     "runtime_ms": body.get("runtime", None),
@@ -188,21 +204,38 @@ def filter_cpu_data(df: pd.DataFrame, provider: str, memory_size: int, benchmark
     instance_means = subset.groupby(["instance_id"] + group_cols)[metric_field].mean().reset_index()
     instance_means.columns = ["instance_id"] + group_cols + ["instance_mean"]
 
-        
-    # Tukey on instance means, grouped by CPU type
-    def is_outlier_tukey(series: pd.Series) -> pd.Series:
-        Q1 = series.quantile(0.25)
-        Q3 = series.quantile(0.75)
-        IQR = Q3 - Q1
-        lower_bound = Q1 - 1.5 * IQR
-        upper_bound = Q3 + 1.5 * IQR
-        return (series < lower_bound) | (series > upper_bound)
 
+    def is_outlier_percentile(series: pd.Series, lower_q: float = 0.01, upper_q: float = 0.99) -> pd.Series:
+        """
+        Flags values outside [lower_q, upper_q] percentiles as outliers.
+        Example: lower_q=0.01, upper_q=0.99 removes the bottom/top 1%.
+        """
+        low = series.quantile(lower_q)
+        high = series.quantile(upper_q)
+        return (series < low) | (series > high)
 
     if no_outlier_filter == False:
-        outlier_mask = instance_means.groupby(group_cols)["instance_mean"].transform(is_outlier_tukey)
+        outlier_mask = instance_means.groupby(group_cols)["instance_mean"].transform(
+            lambda s: is_outlier_percentile(s, lower_q=0.05, upper_q=0.95)
+        )
         bad_instances = instance_means.loc[outlier_mask, "instance_id"].unique()
         subset = subset[~subset["instance_id"].isin(bad_instances)]
+
+        
+    # # Tukey on instance means, grouped by CPU type
+    # def is_outlier_tukey(series: pd.Series) -> pd.Series:
+    #     Q1 = series.quantile(0.25)
+    #     Q3 = series.quantile(0.75)
+    #     IQR = Q3 - Q1
+    #     lower_bound = Q1 - 3 * IQR
+    #     upper_bound = Q3 + 3 * IQR
+    #     return (series < lower_bound) | (series > upper_bound)
+
+
+    # if no_outlier_filter == False:
+    #     outlier_mask = instance_means.groupby(group_cols)["instance_mean"].transform(is_outlier_tukey)
+    #     bad_instances = instance_means.loc[outlier_mask, "instance_id"].unique()
+    #     subset = subset[~subset["instance_id"].isin(bad_instances)]
 
     return subset
 

@@ -38,7 +38,7 @@ Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the E
 #### Slide 4: CPU identification across platforms
 
 - Before starting with the experimental results, its important to understand how we identify different cpu models across platforms.
-- Important practical challenge: platforms expose CPU identity differently
+- Important practical challenge: platforms abstract CPU identity differently
 - To extract CPU identity information, we relied on the information from the /proc/cpuinfo file - which is commonly available on linux based systems.
   - While Azure gives the full CPU model name, AWS and alibaba only give generic names, like intel xeon 2.5 ghz and gcp fully sets the name to unknown.
   - however for gcp we can make use of the model number to differentiate between cpu models.
@@ -57,7 +57,6 @@ Welcome everyone. Today I am presenting my Master Thesis titled 'Exploring the E
   - For the analysis:
     - discard the first invocation to avoid cold start effects.
     - we only keep instances where all 4 invocations succeeded
-    - we use the tukey method to remove outliers from the remaining instances
 
 - Stage A builds the regional baseline
 
