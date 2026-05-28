@@ -84,6 +84,10 @@ def parse_log_file(benchmark_file: str) -> list[dict]:
                     "cpu_type": shorten_cpu_name(cpu_field),
                     "cpu_model_number": body.get("cpuModel", "unknown"),
 
+                    # Context switches
+                    "context_switches": body.get("contextSwitches", None),
+                    "context_switches_delta": body.get("contextSwitchesDelta", None),
+
                     # Performance metrics
                     "runtime_ms": body.get("runtime", None),
                     "user_runtime_ms": body.get("userRuntime", None),
@@ -208,6 +212,13 @@ def filter_full_lifecycle(df: pd.DataFrame, remove_cold: bool = False) -> pd.Dat
         subset = subset[subset["invocation_count"] > 1]
 
     return subset
+
+def remove_cold_starts(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove cold start invocations from the DataFrame.
+    Cold starts are identified as records where 'invocation_count' is 1.
+    """
+    return df[~(df["invocation_count"] == 1)].copy()
 
 
 def load_records_from_directory(log_dir: str) -> pd.DataFrame:   

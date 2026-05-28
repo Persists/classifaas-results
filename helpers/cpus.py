@@ -40,13 +40,6 @@ def shorten_cpu_name(cpu_name):
 # CONSISTENT COLOR GENERATION
 # ==============================================================================
 
-# ==============================================================================
-# 2. MANUAL COLOR MAPPING (TAB20 PALETTE)
-# ==============================================================================
-
-# Get 20 distinct colors from Seaborn's official 'tab20' palette
-# We convert them to Hex immediately for consistency
-
 # Kelly's 20 colors - scientifically chosen for maximum distinction
 KELLY_COLORS = [
     '#F99379',  # Strong Yellowish Pink
@@ -75,29 +68,29 @@ COLORS = KELLY_COLORS
 
 # Distinct Assignments
 MANUAL_COLORS = {
-    # --- AWS (Blues/Oranges) ---
-    "aws:Intel Xeon 2.50GHz":        COLORS[0],  
-    "aws:Intel Xeon 2.90GHz":        COLORS[1],  
-    "aws:Intel Xeon 3.00GHz":        COLORS[2], 
-    "aws:AMD EPYC 2.25GHz":                  COLORS[3], 
-    "aws:AMD EPYC 2.65GHz":                COLORS[18], 
-    # --- AZURE (Greens/Reds) ---
-    "azure:Intel Xeon 8370C": COLORS[4],  
-    "azure:AMD EPYC 7763":                     COLORS[5],  
-    "azure:AMD EPYC 9V74":                     COLORS[6],  
-    # --- GCP (Purples/Browns - Microarchitecture Codes) ---
-    "gcp:Model 1 (AMD)":   COLORS[7],   
-    "gcp:Model 17 (AMD)":  COLORS[8],  
-    "gcp:Model 85 (Intel)":  COLORS[9],  
-    "gcp:Model 106 (Intel)": COLORS[10],  
-    "gcp:Model 143 (Intel)": COLORS[11],  
-    "gcp:Model 173 (Intel)": COLORS[12],  
-    # --- ALIBABA (Greys/Olives/Cyans - Distinct from AWS) ---
-    "alibaba:Intel Xeon 2.50GHz":                   COLORS[13],  
-    "alibaba:Intel Xeon 2.90GHz":                   COLORS[14],  
-    "alibaba:Intel Xeon 8163 2.50GHz":     COLORS[15],  
-    "alibaba:Intel Xeon 8269CY 2.50GHz":   COLORS[16],  
-    "alibaba:Intel Xeon 8269CY 3.10GHz":   COLORS[17],  
+    # --- AWS ---
+    "aws:Intel Xeon 2.50GHz":              COLORS[0],
+    "aws:Intel Xeon 2.90GHz":              COLORS[1],
+    "aws:Intel Xeon 3.00GHz":              COLORS[2],
+    "aws:AMD EPYC 2.25GHz":                COLORS[3],
+    "aws:AMD EPYC 2.65GHz":                COLORS[18],
+    # --- AZURE ---
+    "azure:Intel Xeon 8370C":              COLORS[4],
+    "azure:AMD EPYC 7763":                 COLORS[5],
+    "azure:AMD EPYC 9V74":                 COLORS[6],
+    # --- GCP ---
+    "gcp:Model 1 (AMD)":                   COLORS[7],
+    "gcp:Model 17 (AMD)":                  COLORS[8],
+    "gcp:Model 85 (Intel)":                COLORS[9],
+    "gcp:Model 106 (Intel)":               COLORS[10],
+    "gcp:Model 143 (Intel)":               COLORS[11],
+    "gcp:Model 173 (Intel)":               COLORS[12],
+    # --- ALIBABA ---
+    "alibaba:Intel Xeon 2.50GHz":          COLORS[13],
+    "alibaba:Intel Xeon 2.90GHz":          COLORS[14],
+    "alibaba:Intel Xeon 8163 2.50GHz":     COLORS[15],
+    "alibaba:Intel Xeon 8269CY 2.50GHz":   COLORS[16],
+    "alibaba:Intel Xeon 8269CY 3.10GHz":   COLORS[17],
 }
 
 def get_cpu_color(cpu_name, provider=None):
@@ -118,7 +111,6 @@ def get_cpu_color(cpu_name, provider=None):
         return MANUAL_COLORS[s]
     
     # 3. Fallback: Hash to Kelly palette (For unknown CPUs)
-    # This ensures new/unknown CPUs still get a valid color
     hash_val = int(hashlib.md5(s.encode()).hexdigest(), 16)
     return COLORS[hash_val % len(COLORS)]
 
@@ -129,3 +121,68 @@ def get_cpu_palette(cpu_list, provider=None):
     unique_cpus = sorted(list(set(cpu_list)))
     return {cpu: get_cpu_color(cpu, provider) for cpu in unique_cpus}
 
+
+# ==============================================================================
+# CPU HATCH PATTERNS
+# ==============================================================================
+# Each CPU gets a distinct hatch within its provider, making it easier to tell
+# bars apart at a glance (and in print/grayscale). Patterns are reused across
+# providers because no figure mixes CPUs from different providers in one axis.
+#
+# Pool ordered roughly by visual weight, lightest first.
+HATCH_POOL = ["", "//", "\\\\", "..", "xx", "++", "oo", "**"]
+
+MANUAL_HATCHES = {
+    # --- AWS (5 CPUs) ---
+    "aws:Intel Xeon 2.50GHz":              "",
+    "aws:Intel Xeon 2.90GHz":              "//",
+    "aws:Intel Xeon 3.00GHz":              "\\\\\\\\\\\\",
+    "aws:AMD EPYC 2.25GHz":                "..",
+    "aws:AMD EPYC 2.65GHz":                "xx",
+    # --- AZURE (3 CPUs) ---
+    "azure:Intel Xeon 8370C":              "",
+    "azure:AMD EPYC 7763":                 "//",
+    "azure:AMD EPYC 9V74":                 "\\\\",
+    # --- GCP (6 CPUs) ---
+    "gcp:Model 1 (AMD)":                   "",
+    "gcp:Model 17 (AMD)":                  "//",
+    "gcp:Model 85 (Intel)":                "\\\\",
+    "gcp:Model 106 (Intel)":               "..",
+    "gcp:Model 143 (Intel)":               "xx",
+    "gcp:Model 173 (Intel)":               "++",
+    # --- ALIBABA (5 CPUs) ---
+    "alibaba:Intel Xeon 2.50GHz":          "",
+    "alibaba:Intel Xeon 2.90GHz":          "//",
+    "alibaba:Intel Xeon 8163 2.50GHz":     "\\\\",
+    "alibaba:Intel Xeon 8269CY 2.50GHz":   "..",
+    "alibaba:Intel Xeon 8269CY 3.10GHz":   "xx",
+}
+
+
+def get_cpu_hatch(cpu_name, provider=None):
+    """
+    Returns the matplotlib hatch pattern for the CPU.
+    Provider-aware so the same CPU label under different providers can map to
+    different hatches (mirrors get_cpu_color). Falls back to deterministic
+    assignment from HATCH_POOL for unknown CPUs.
+    """
+    s = clean_cpu_string(str(cpu_name)).strip()
+
+    if provider:
+        prov_key = f"{provider.lower()}:{s}"
+        if prov_key in MANUAL_HATCHES:
+            return MANUAL_HATCHES[prov_key]
+
+    if s in MANUAL_HATCHES:
+        return MANUAL_HATCHES[s]
+
+    hash_val = int(hashlib.md5(s.encode()).hexdigest(), 16)
+    return HATCH_POOL[hash_val % len(HATCH_POOL)]
+
+
+def get_cpu_hatches(cpu_list, provider=None):
+    """
+    Returns a dictionary {cpu_name: hatch} for the provided list.
+    """
+    unique_cpus = sorted(list(set(cpu_list)))
+    return {cpu: get_cpu_hatch(cpu, provider) for cpu in unique_cpus}
