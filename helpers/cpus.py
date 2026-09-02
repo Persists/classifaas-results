@@ -134,29 +134,30 @@ HATCH_POOL = ["", "//", "\\\\", "..", "xx", "++", "oo", "**"]
 
 MANUAL_HATCHES = {
     # --- AWS --- (dominant CPU plain, slivers get high-contrast texture)
-    "aws:Intel Xeon 2.50GHz":            "",
-    "aws:Intel Xeon 2.90GHz":            "xxx",
-    "aws:Intel Xeon 3.00GHz":            "ooo",
-    "aws:AMD EPYC 2.25GHz":              "...",
-    "aws:AMD EPYC 2.65GHz":              "\\\\\\",   # 6 backslashes in source = back-diagonal
+    "aws:Intel Xeon 2.50GHz":            "/////",
+    "aws:Intel Xeon 2.90GHz":            ".....",
+    "aws:Intel Xeon 3.00GHz":            "xxxxx",
+    "aws:AMD EPYC 2.25GHz":              "oooo",
+    "aws:AMD EPYC 2.65GHz":              "",   # 6 backslashes in source = back-diagonal
     # --- AZURE ---
-    "azure:Intel Xeon 8370C":            "",
-    "azure:AMD EPYC 7763":               "///",
-    "azure:AMD EPYC 9V74":               "...",      # was "000", an invalid hatch
+    "azure:Intel Xeon 8370C":            "....",
+    "azure:AMD EPYC 7763":               "/////",
+    "azure:AMD EPYC 9V74":               "",      # was "000", an invalid hatch
     # --- GCP --- (6 CPUs, every one textured, max orientation spread)
-    "gcp:Model 1 (AMD)":                 "...",
-    "gcp:Model 17 (AMD)":                "///",
-    "gcp:Model 85 (Intel)":              "\\\\\\",
-    "gcp:Model 106 (Intel)":             "xxx",
-    "gcp:Model 143 (Intel)":             "ooo",
-    "gcp:Model 173 (Intel)":             "---",
+    "gcp:Model 1 (AMD)":                 "xxxxx",
+    "gcp:Model 17 (AMD)":                "/////",
+    "gcp:Model 85 (Intel)":              ".....",
+    "gcp:Model 106 (Intel)":             "",
+    "gcp:Model 143 (Intel)":             "oooo",
+    "gcp:Model 173 (Intel)":             "",
     # --- ALIBABA ---
-    "alibaba:Intel Xeon 2.50GHz":        "",
-    "alibaba:Intel Xeon 2.90GHz":        "///",
-    "alibaba:Intel Xeon 8163 2.50GHz":   "xxx",
-    "alibaba:Intel Xeon 8269CY 2.50GHz": "...",
-    "alibaba:Intel Xeon 8269CY 3.10GHz": "ooo",
+    "alibaba:Intel Xeon 2.50GHz":        ".....",
+    "alibaba:Intel Xeon 2.90GHz":        "/////",
+    "alibaba:Intel Xeon 8163 2.50GHz":   "oooo",
+    "alibaba:Intel Xeon 8269CY 2.50GHz": "xxxxx",
+    "alibaba:Intel Xeon 8269CY 3.10GHz": "",
 }
+
 
 def get_cpu_hatch(cpu_name, provider=None):
     """

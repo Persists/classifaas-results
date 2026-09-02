@@ -14,7 +14,7 @@ We added five different benchmark workloads to evaluate performance across vario
 
 | Benchmark | Description |
 |-----------|-------------|
-| `gemm` | Matrix multiplication (compute-bound) |
+| `matmul` | Matrix multiplication (compute-bound) |
 | `sha256` | SHA-256 hashing (benefits from SHA-NI) |
 | `aesCtr` | AES-CTR encryption (benefits from AES-NI/VAES) |
 | `gzip` | Gzip compression (memory/compute mixed) |
@@ -24,7 +24,7 @@ We added five different benchmark workloads to evaluate performance across vario
 
 
 **Log file naming:** `{platform}-{benchmark}-{memory}.log`  
-Example: `aws-gemm-128.log`
+Example: `aws-matmul-128.log`
 
 **Billed Information:** Each  stage also includes billing data.
 

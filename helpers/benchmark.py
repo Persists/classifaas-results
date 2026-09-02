@@ -121,7 +121,7 @@ def parse_log_file(benchmark_file: str) -> list[dict]:
 
 
                 # Depending on benchmark type, include additional fields
-                if benchmark.get("type") == "gemm":
+                if benchmark.get("type") == "matmul":
                     record["matrix_size"] = benchmark.get("matrixSize")
                     record["multiplication_time_ms"] = benchmark.get("multiplicationTimeMs")
 
@@ -159,7 +159,7 @@ def metric_for_benchmark(benchmark_type: str) -> str:
     Given a benchmark type, return the corresponding performance metric field name.
     """
     mapping = {
-        "gemm": "multiplication_time_ms",
+        "matmul": "multiplication_time_ms",
         "aesCtr": "encrypt_time_ms",
         "gzip": "compress_time_ms",
         "sha256": "hash_time_ms",
